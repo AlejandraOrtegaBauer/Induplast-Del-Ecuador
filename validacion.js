@@ -16,7 +16,7 @@ function valida_envia() {
     }
 
 
-    if (document.fvalida.correo.selectedIndex == 0) {
+    if (document.fvalida.correo.value.length == 0) {
         alert("Debe introducir un mail.")
         document.fvalida.correo.focus()
         return 0;

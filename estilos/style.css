@@ -4,8 +4,28 @@
     box-sizing: border-box;
 }
 
+/* Generales */
 body{
     font-family: 'Poppins', sans-serif;
+}
+
+.map{
+    margin-top: 3%;
+    margin-bottom: 5%;
+    margin-left: 18%;
+}
+
+.map p {
+    margin-left: 25%;
+    margin-bottom: 2%;
+}
+
+.bodyContacto{
+    background-color: rgb(153, 152, 152);
+}
+
+.headerCon{
+    background-color: white;
 }
 
 .logo-nav{
@@ -13,7 +33,7 @@ body{
 }
 
 header{
-    width: 100%;
+    width: 100vw;
 }
 
 header nav{
@@ -39,21 +59,29 @@ ul li a{
 
 .mensajeHeader{
     height: 25em;
-    width: 100%;
+    width: 100vw;
     background-image: url(../imgs/header.jpg);
     padding-top: 5em;
 }
 
 main{
     padding-top: 2em;
+    padding-bottom: 1em;
 }
 
 div h4 strong{
     font-weight: 300;
 }
 
+div iframe{
+    width: 56em;
+    height: 28em;
+}
+
 button{
     font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: white;
 }
 
 .tanques{
@@ -66,10 +94,18 @@ button{
     color: white;
 }
 
+.tanques p{
+    width: 50%;
+}
+
 .pallets{
     height: 14em;
     width: 35em;
     background-image: url(../imgs/pallets.png)
+}
+
+.pallets p{
+    width: 50%;
 }
 
 .pallets h2{
@@ -82,6 +118,11 @@ button{
     background-image: url(../imgs/contenedores.png)
 }
 
+.contenedores p{
+    width: 50%;
+    color: white;
+}
+
 .contenedores h2{
     color: white;
 }
@@ -90,6 +131,10 @@ button{
     height: 14em;
     width: 35em;
     background-image: url(../imgs/juegos.png)
+}
+
+.juegosInfantiles p{
+    width: 50%;
 }
 
 .juegosInfantiles h2{
@@ -106,10 +151,22 @@ button{
     color: white;
 }
 
+.cobertores p{
+    width: 50%;
+}
+
 .otrosProductos{
     height: 14em;
     width: 35em;
     background-image: url(../imgs/otros.png)
+}
+
+.otrosProductos p{
+    width: 50%;
+}
+
+.otrosProductos h2{
+    color: black;
 }
 
 footer{
@@ -176,6 +233,25 @@ tr td{
         display: flex;
         flex-direction: row;
     }
+
+    .logo-nav{
+        width: 7em;
+        height: auto;
+    }
+
+    ul li a{
+        size: 1em;
+    }
+
+    .sloganBox{
+        background-color: black;
+        opacity: 70%;
+    }
+
+    .slogan{
+        color: white;
+        font-size: 1.5em;
+    }
     
     .fr{
         display: flex;
@@ -222,6 +298,19 @@ tr td{
     .otrosProductos{
         grid-area: foto6;
     }
+
+    div iframe{
+        width: 35em;
+        height: 20em;
+    }
+
+    .logoFooter{
+        width: 10em;
+    }
+
+    .telefonos h3, .correos h3{
+        font-size: 1.2em;
+    }
 }
 
 /*Tablet*/
@@ -263,10 +352,6 @@ tr td{
 
     .otrosProductos{
         grid-area: foto6;
-    }
-
-    .map{
-        width: 50%;
     }
 }
 
@@ -331,10 +416,6 @@ tr td{
         "foto1 foto2"
         "foto3 foto4"
         "foto5 foto6";
-    }
-
-    .map{
-        width: 70%;
     }
 
     .tanques{
